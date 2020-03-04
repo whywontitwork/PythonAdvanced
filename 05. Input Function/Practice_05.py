@@ -8,3 +8,12 @@
 
 '''
 
+r = float(input("# 반지름 : "))
+
+area = 3.14 * r * r     # 면적
+cirm = 2.0 * 3.14 * r   # 둘레
+
+
+print("면적 :", area)
+print("둘레 :", cirm)
+
