@@ -1,5 +1,6 @@
+import random
 
-answer = 77
+answer = random.randint(1,100)
 
 while True:
     getAnswer = int(input("# 정답 : "))
