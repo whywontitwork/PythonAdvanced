@@ -13,4 +13,17 @@
 '''
 
 
+f_temp = float(input("# 화씨온도 : "))
+
+c_temp = 5.0 / 9.0 * ( f_temp - 32 )
+
+print("화씨온도 : %.1f  => 섭씨온도 : %.1f" % (f_temp , c_temp))
+
+print("\n")
+
+c_temp = float(input("# 섭씨온도 : "))
+
+f_temp = 9.0 * c_temp / 5 + 32
+
+print("섭씨온도 : %.1f  => 화씨온도 : %.1f" % (c_temp , f_temp))
 
