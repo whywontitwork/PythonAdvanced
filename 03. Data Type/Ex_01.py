@@ -27,11 +27,13 @@ print("True")        # 다른 데이터
 print(type("True"))
 print()
 
+
 # 1-2) 정수 ( int )
 print(7)
 print(-7)
 print(type(7))
 print()
+
 
 # 1-3) 실수 ( float )
 print(0.0)
@@ -39,6 +41,7 @@ print(-0.7)
 print(0.7)
 print(type(0.0))
 print()
+
 
 # 1-4) 문자, 문자열 ( str )
 print('#')
@@ -52,6 +55,7 @@ print("Python")
 print(type('Python'))
 print(type("Python"))
 print()
+
 
 #@) 문자열을 만드는 4가지 방법
 print('string data')       # ''
@@ -81,7 +85,21 @@ print(""" 이름 :
 생일 : 
 """)
 
+# 이스케이프 문자
+# \n : new line 한줄을 건너 뛴다.
+print("testData1\n")
+print("testData2")
+
+# \t : tab 만큼 건너 뛴다.
+print("testData3\ttestData4")
+print()
 
 
+# 문자열 연산
+print("Language" + ": Python")      # 문자열 더하기 => 문자열 이어붙이기
+pythonGrade = 100
+print("grade : " + str(pythonGrade)) # 문자열로 형변환하여 이어붙인다.
+print()
 
-
+print("=" * 50)                 # 문자열 곱하기 => 문자열 반복하기
+print()
