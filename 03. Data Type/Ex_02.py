@@ -2,7 +2,7 @@
 
 '''
 
-    리스트 ( list )
+    1) 리스트 ( list )
     
     - 복수의 데이터를 묶어서 저장하여 데이터의 저장,유지,사용을
       용이하게 하는 자료구조
@@ -141,7 +141,100 @@ nums.pop(5)      # - 5번째 위치한 6삭제
 print(nums)
 print()
 
-# extend, insert, sort, count, index 공부해 보세요.
+
+# extend() : 확장하기
+nums = [1, 2, 3, 4]
+print(nums)
+
+# nums.extend(5,6,7)    # x
+nums.extend([5, 6, 7])  # 리스트가 언팩킹되어 확장된다.
+print(nums)
+nums.extend([8, 9, 10])
+print(nums)
+print()
+
+
+# insert() : 삽입하기    insert(위치,데이터)
+nums = [1, 2, 3]
+print(nums)
+
+nums.insert(1, 1.5)  # 기존의 데이터가 한칸씩 뒤로 밀린다.
+print(nums)
+
+nums.insert(3, 2.5)
+print(nums)
+print()
+
+
+# sort() : 정렬하기
+nums = [9, 4, 2, 8, 7, 1, 6, 5, 3]
+chars = ['d', 'b', 'a', 'e', 'c']
+
+print(nums)
+print(chars)
+
+nums.sort()   # 정렬 ( 오름차순 ) , 원본데이터 변경
+chars.sort()  # 정렬 ( 오름차순 ) , 원본데이터 변경
+
+print(nums)
+print(chars)
+print()
+
+nums2 = [5, 3, 1, 4, 2]
+chars2 = ['c', 'b', 'e', 'a', 'd']
+print(nums2)
+print(chars2)
+
+print(sorted(nums2))  # sorted는 원본 데이터가 정렬되지 않는다.
+print(sorted(chars2))
+
+print(nums2)  # sorted를 확인한 후에도 원본이 남아있다.
+print(chars2)
+print()
+
+nums3 = [5, 1, 3, 4, 2]
+chars3 = ['b', 'a', 'e', 'd', 'c']
+
+print(nums3)
+print(chars3)
+
+nums3.sort(reverse=True)   # 내림차순 정렬 (reverse=True)
+chars3.sort(reverse=True)  # 내림차순 정렬 (reverse=True)
+
+print(nums3)
+print(chars3)
+print()
+
+
+# reverse() : 전환하기
+nums = [5, 1, 3, 9, 2, 8, 7, 4, 6]
+chars = ['p', 'y', 't', 'h', 'o', 'n']
+
+print(nums)
+print(chars)
+
+nums.reverse()      # 데이터의 순서를 전환한다.
+                    # [주의] 데이터를 정렬하지는 않는다.
+chars.reverse()
+
+print(nums)
+print(chars)
+print()
+
+
+# count() : 요소의 개수를 확인하기
+word_list = ["python", "python", "Python", "python."]
+print(word_list)
+print(word_list.count("python"))
+print()
+
+
+# index() : 위치찾기 ( 첫번째 위치를 1번만 찾는다. )
+word_list = ["python", "python", "Python", "python."]
+print(word_list)
+print(word_list.index("Python"))
+print()
+
 
 
 '''
@@ -214,9 +307,9 @@ print()
 
 '''
 
-    3) 딕셔너리 (사전)
+    3) 딕셔너리 (dict)
     
-    - 키:벨류 형태로 데이터를 저장하는 자료 구조
+    - 순서와 관계 없이 키:벨류 형태로 데이터를 저장하는 자료 구조
     
     [형식]
     변수 = {키1:벨류1 ,키2:벨류2,...}
