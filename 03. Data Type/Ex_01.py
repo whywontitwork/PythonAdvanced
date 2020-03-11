@@ -103,3 +103,40 @@ print()
 
 print("=" * 50)                 # 문자열 곱하기 => 문자열 반복하기
 print()
+
+
+# 문자열 인덱싱 : 문자열의 특정 문자의 위치에 접근한다.
+personalID = "000101-1234567"
+print(personalID)
+print(personalID[0])    # 0부터 시작
+print(personalID[3])
+print(personalID[-1])   # - 는 -1부터 시작 ( -0이 없기때문에 )
+print(personalID[-3])
+print()
+
+
+# 문자열 슬라이싱 : 문자열을 특정한 범위로 자른다.
+personalID = "000101-1234567"
+print(personalID)       # 000101-1234567
+print(personalID[:2])   # 00
+print(personalID[2:4])  # 01
+print(personalID[7:])   # 1234567
+print(personalID[:-1])  # 000101-123456
+print()
+
+
+# 문자열 관련 함수
+'''
+    split 
+    replace
+    index
+    upper
+    lower
+    strip
+    lstrip
+    rstrip
+'''
+
+
+
+
