@@ -126,16 +126,64 @@ print()
 
 
 # 문자열 관련 함수
-'''
-    split 
-    replace
-    index
-    upper
-    lower
-    strip
-    lstrip
-    rstrip
-'''
+
+# strip() : 문자열의 좌우측의 공백을 제거
+strData = "    name : Guido van Rossum , grade : A+   "
+
+print(strData)
+print(strData.strip())
+
+# lstrip() : 문자열의 좌측 공백 제거
+print(strData.lstrip())
+# rstrip() : 문자열의 우측 공백 제거
+print(strData.rstrip())
+print()
+
+
+# split() : 문자열 나누기
+academy = "MegaStudy IT Class"
+print(academy)
+print(academy.split())
+
+academy = "MegaStudy/IT/Class"
+print(academy)
+print(academy.split("/"))
+
+academy = "MegaStudy,IT,Class"
+print(academy)
+print(academy.split(","))
+print()
+
+
+# replace() : 문자열 대체하기
+strData = "Zython is fun!"
+
+print(strData)
+print(strData.replace("Zython" , "Python"))
+print()
+
+
+# index() : 위치 찾기
+academy = "MegaStudy IT Class"
+print(academy)
+print(academy.index('S'))     #처음으로 만나는 문자의 위치를 반환
+print(academy.index('S' , 4)) #3이후 부터
+print(academy.rindex('S'))    #뒤에서부터 처음으로 만나는 문자의 위치를 반환
+print()
+
+
+# upper() : 문자열을 모두 대문자로 변경
+academy = "megastudy it class"
+print(academy)
+print(academy.upper())
+print()
+
+
+#lower() : 문자열을 모두 소문자로 변경
+academy = "MEGASTUDY IT CLASS"
+print(academy)
+print(academy.lower())
+print()
 
 
 
