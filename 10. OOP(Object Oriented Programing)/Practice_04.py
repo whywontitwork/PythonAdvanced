@@ -18,11 +18,11 @@ class Hangman:
             self.__init__()
 
     def start_game(self):
-        answer_list = ['lotto','array','mango','start','buddy']
+        answer_list = ['lotto', 'array', 'mango', 'start', 'buddy']
         answer = random.choice(answer_list)
         progress = ['?', '?', '?', '?', '?']
         cnt = 0
-        
+
         while True:
             print()
             guess = input("Guess:")
@@ -37,6 +37,7 @@ class Hangman:
                 self.draw_hangman(cnt)
                 cnt += 1
                 print()
+                print("%s is not in Answer." % guess)
                 print("{} is not in Answer.".format(guess))
                 print("now Progress:", self.show_progress(guess, answer, progress))
 
@@ -52,7 +53,7 @@ class Hangman:
                 progress[i] = guess
         return "".join(progress)
 
-    def draw_hangman(self,cnt):
+    def draw_hangman(self, cnt):
         if cnt == 0:
             print("==========")
             print("| ")
@@ -100,6 +101,5 @@ class Hangman:
             print("===============")
             self.__init__()
 
+
 Hangman()
-
-
